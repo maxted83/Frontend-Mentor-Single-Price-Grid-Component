@@ -1,0 +1,138 @@
+body {
+    background-color: hsl(204, 43%, 93%);
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+.card {
+    max-width: 330px;
+    box-shadow: 0px 20px 15px 3px rgba(0, 0, 0, 0.17);
+    border-radius: 0 0 8px 8px;
+}
+
+.card-wrapper {
+    height: 33%;
+    padding: 5px 20px 10px 20px;
+}
+
+.card-top {
+    background-color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 1.3rem;
+}
+
+.h2-top {
+    font-size: 1rem;
+    color: hsl(71, 73%, 54%);
+}
+
+.text-top {
+    color: hsl(218, 22%, 67%);
+    line-height: 25px;
+    font-size: 0.9rem;
+}
+
+.card-middle {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+}
+
+.text-middle-price {
+    font-size: 2.1rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-;
+    align-items: center;
+    margin: 0;
+}
+
+.price-time {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.623);
+    padding-left: 14px;
+}
+
+.btn-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(71, 73%, 54%);
+    height: 3rem;
+    border-radius: 5px;
+    color: white;
+    text-decoration: 0;
+    font-weight: 700;
+    margin: 28px 0 18px 0;
+    box-shadow: 0px 7px 15px 3px rgba(0, 0, 0, 0.17);
+}
+
+.card-bottom {
+    border-radius: 0 0 8px 8px;
+    background-color: #4ABEBD;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    color: hsl(204, 43%, 93%);
+    line-height: 23px;
+}
+
+@media (min-width: 1440px) {
+    .card {
+        max-width: 650px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card-top {
+        grid-column: span 2;
+        height: auto;
+        padding: 10px 120px 20px 35px;
+    }
+
+    /* .text-top {
+        padding-right: 50px;
+    } */
+
+    .card-middle {
+        height: 100%;
+        border-radius: 0 0 0 8px;
+        padding: 20px 40px 0px 35px;
+    }
+
+    .price-time {
+        font-size: 0.9rem;
+    }
+
+    .fullaccess {
+        font-size: 1rem;
+    }
+
+    .card-bottom {
+        height: 100%;
+        border-radius: 0 0 8px 0;
+        padding: 20px 20px 0px 35px;
+    }
+
+    ul {
+        font-size: 0.8rem;
+    }
+
+}
